@@ -19,19 +19,20 @@ export function PageHero({ eyebrow, title, text }) {
 
 export function CtaBar() {
   return (
-    <section className="bg-gradient-to-r from-sky-700 to-emerald-50 px-5 py-12 text-white">
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-sky-950 to-sky-800 px-5 py-14 text-white">
+      <div className="pointer-events-none absolute -right-20 -top-24 size-72 rounded-full border border-white/10 bg-white/5" />
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
         <div>
-          <p className="mb-2 text-xs font-bold uppercase tracking-[.2em] text-amber-200">
+          <p className="mb-2 text-xs font-bold uppercase tracking-[.2em] text-amber-300">
             Need a plumber?
           </p>
-          <h2 className="font-serif text-4xl">
+          <h2 className="font-serif text-4xl text-white">
             We&apos;ll restore comfort quickly.
           </h2>
         </div>
         <a
           href="tel:+16824362800"
-          className="rounded-full bg-sky-700 px-6 py-4 font-bold text-slate-900 shadow-xl "
+          className="rounded-full bg-amber-500 px-6 py-4 font-bold text-slate-950 shadow-xl shadow-black/20 transition hover:bg-amber-400"
         >
           Call {phone} →
         </a>
@@ -40,16 +41,16 @@ export function CtaBar() {
   );
 }
 
-export function SectionTitle({ eyebrow, title, text }) {
+export function SectionTitle({ eyebrow, title, text, light = false }) {
   return (
     <div className="mb-10 max-w-3xl">
-      <p className="mb-3 text-xs font-black uppercase tracking-[.2em] text-sky-700">
+      <p className={`mb-3 text-xs font-black uppercase tracking-[.2em] ${light ? "text-amber-300" : "text-sky-700"}`}>
         {eyebrow}
       </p>
-      <h2 className="font-serif text-4xl leading-tight text-slate-900 sm:text-5xl">
+      <h2 className={`font-serif text-4xl leading-tight sm:text-5xl ${light ? "text-white" : "text-slate-900"}`}>
         {title}
       </h2>
-      {text && <p className="mt-5 text-lg leading-8 text-slate-600">{text}</p>}
+      {text && <p className={`mt-5 text-lg leading-8 ${light ? "text-sky-100" : "text-slate-600"}`}>{text}</p>}
     </div>
   );
 }

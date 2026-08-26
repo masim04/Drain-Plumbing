@@ -3,6 +3,9 @@ import { CtaBar, SectionTitle } from "../components/PageParts";
 import service1 from "../assets/service1.webp";
 import service2 from "../assets/service2.webp";
 import service3 from "../assets/service3.webp";
+import gallery1 from "../assets/waterline.jpg";
+import gallery2 from "../assets/extra1.jpg";
+import gallery3 from "../assets/systemupgrades.jpg";
 import water from "../assets/waterhome.jpg";
 const services = [
   [
@@ -42,6 +45,16 @@ const testimonials = [
   "They arrived quickly, explained the problem clearly, and fixed our main drain without pressure.",
   "The team was careful, professional, and kept us updated through our whole-house repipe.",
   "A dependable local crew. Our water heater issue was diagnosed and solved in one visit.",
+];
+const locations = [
+  ["Keystone Heights", "Clay / Bradford / Putnam Hub", "Rapid dispatch"],
+  ["Gainesville", "Alachua County", "Daily fleet routes"],
+  ["Middleburg", "Clay County", "Full service fleet"],
+];
+const gallery = [
+  [gallery1, "Drain cleaning", "Restoring flow where your home needs it most."],
+  [gallery2, "Leak diagnosis", "Finding the source before water damage spreads."],
+  [gallery3, "Water line work", "Improving pressure with careful pipe service."],
 ];
 
 export default function Home() {
@@ -240,6 +253,28 @@ export default function Home() {
                 </footer>
               </blockquote>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="px-5 py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <SectionTitle eyebrow="Nearby when you need us" title="Local service, planned around your community." text="Our crews serve homeowners and businesses across the region with organized routes and responsive dispatch." />
+            <a href="#locations" className="mb-10 shrink-0 rounded-full border border-sky-700 px-5 py-3 font-bold text-sky-700">See all locations →</a>
+          </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            {locations.map(([city, county, badge]) => <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg shadow-slate-900/5" key={city}><div className="flex items-start justify-between gap-3"><div><span className="text-amber-700">●</span><h3 className="mt-2 font-serif text-3xl text-slate-900">{city}</h3><p className="mt-1 text-sm text-slate-500">{county}</p></div><span className="rounded-lg bg-emerald-50 px-2 py-2 text-[10px] font-bold uppercase tracking-wider text-emerald-800">{badge}</span></div><p className="mt-6 border-t border-slate-200 pt-5 leading-7 text-slate-600">Drain cleaning · Leak repair · Water heaters · Pipe work</p></article>)}
+          </div>
+        </div>
+      </section>
+      <section className="bg-slate-100 px-5 py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <SectionTitle eyebrow="A look at our work" title="The details matter, from diagnosis to finish." text="Explore a few examples of the systems and repairs our team handles every day." />
+            <a href="#gallery" className="mb-10 shrink-0 rounded-full border border-sky-700 px-5 py-3 font-bold text-sky-700">View full gallery →</a>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {gallery.map(([image, title, text]) => <article className="overflow-hidden rounded-2xl bg-white shadow-lg shadow-slate-900/5" key={title}><img src={image} alt={title} className="h-56 w-full object-cover" /><div className="p-6"><h3 className="font-serif text-2xl text-slate-900">{title}</h3><p className="mt-2 leading-7 text-slate-600">{text}</p></div></article>)}
           </div>
         </div>
       </section>

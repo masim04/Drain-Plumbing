@@ -51,6 +51,18 @@ const signs = [
   "Sewer odors near cleanouts or bathrooms",
   "A water meter that moves when everything is off",
 ];
+const process = [
+  ["01", "Listen and inspect", "We learn what changed, inspect the accessible system, and look for the root cause."],
+  ["02", "Explain the options", "You receive clear recommendations, priorities, and practical repair or replacement choices."],
+  ["03", "Complete the work", "Our technician protects your space and completes the agreed work with careful workmanship."],
+  ["04", "Check and close", "We test the repair, answer your questions, and leave the work area clean."],
+];
+const faqs = [
+  ["Do you handle emergency plumbing issues?", "Yes. Call or text us with the symptoms and we will help you determine the fastest next step."],
+  ["How do I know whether a leak is serious?", "Any active leak, unexplained water bill, damp smell, or water stain deserves prompt attention before damage spreads."],
+  ["Can you help with older plumbing systems?", "Yes. We inspect the current materials and explain whether repair, maintenance, or a phased replacement is the most sensible option."],
+  ["Do you work with businesses and restaurants?", "We support commercial plumbing needs including restrooms, kitchen lines, maintenance, and backflow requirements."],
+];
 
 export default function Services() {
   return (
@@ -154,6 +166,12 @@ export default function Services() {
             ))}
           </div>
         </div>
+      </section>
+      <section className="bg-sky-950 px-5 py-24 text-white">
+        <div className="mx-auto max-w-7xl"><SectionTitle light eyebrow="Our easy four-step process" title="From the first call to a working system, every step stays clear."/><div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">{process.map(([number, title, text]) => <article className="rounded-2xl border border-white/10 bg-white/5 p-6" key={number}><span className="text-3xl font-black text-amber-300">{number}</span><h3 className="mt-6 text-xl font-bold text-white">{title}</h3><p className="mt-3 leading-7 text-sky-100">{text}</p></article>)}</div></div>
+      </section>
+      <section className="bg-slate-100 px-5 py-24">
+        <div className="mx-auto max-w-5xl"><SectionTitle eyebrow="Frequently asked questions" title="A few answers before you call."/><div className="grid gap-4">{faqs.map(([question, answer]) => <details className="group rounded-2xl bg-white p-6 shadow-sm" key={question}><summary className="cursor-pointer list-none pr-8 text-lg font-bold text-slate-900 marker:hidden">{question}<span className="float-right text-2xl text-sky-700">+</span></summary><p className="mt-4 max-w-3xl leading-7 text-slate-600">{answer}</p></details>)}</div></div>
       </section>
       <CtaBar />
     </main>

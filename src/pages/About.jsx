@@ -20,6 +20,11 @@ const credentials = [
   "Commercial kitchen and health code certified",
   "Backflow prevention assembly certified",
 ];
+const milestones = [
+  ["01", "The beginning", "Drain & Plumbing Services started with a simple goal: make dependable plumbing support feel personal and straightforward."],
+  ["02", "Growing trust", "As more homeowners and businesses called, our work expanded through referrals and long-term relationships."],
+  ["03", "Today", "We continue serving the region with practical repairs, thoughtful communication, and a standard that does not change with the size of the job."],
+];
 
 export default function About() {
   return (
@@ -88,6 +93,15 @@ export default function About() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="bg-sky-50 px-5 py-24">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[.8fr_1.2fr]">
+          <div><p className="text-xs font-black uppercase tracking-[.2em] text-amber-700">Our story</p><h2 className="mt-4 font-serif text-5xl leading-tight text-slate-900">Built one honest conversation at a time.</h2></div>
+          <div className="space-y-6 text-lg leading-8 text-slate-600"><p>Plumbing problems can make a normal day feel uncertain. We built this company around changing that experience: listen carefully, explain clearly, and leave people with a system they can trust.</p><p>Our story is shaped by the homes, restaurants, and businesses we have helped. Every call has taught us to value preparation, respect, and workmanship that holds up long after the invoice is closed.</p><p>That mindset still guides how we train, schedule, communicate, and stand behind our work today.</p></div>
+        </div>
+      </section>
+      <section className="px-5 py-24">
+        <div className="mx-auto max-w-7xl"><SectionTitle eyebrow="Milestone journey" title="A steady path, measured in people helped."/><div className="grid gap-5 md:grid-cols-3">{milestones.map(([number, title, text]) => <article className="border-t-4 border-sky-700 pt-6" key={number}><span className="text-3xl font-black text-amber-700">{number}</span><h3 className="mt-5 font-serif text-3xl text-slate-900">{title}</h3><p className="mt-3 leading-7 text-slate-600">{text}</p></article>)}</div></div>
       </section>
       <section className="bg-slate-100 px-5 py-24">
         <div className="mx-auto max-w-7xl">
