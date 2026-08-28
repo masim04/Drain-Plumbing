@@ -1,5 +1,5 @@
 import { CtaBar, PageHero, SectionTitle } from "../components/PageParts";
-
+import {useEffect} from "react";
 const expectations = [
   [
     "01",
@@ -19,6 +19,18 @@ const expectations = [
 ];
 
 export default function Contact() {
+    // Dynamically load the form script when the page mounts
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://links.magnivodigital.com/js/form_embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script); // Clean up on leave
+    };
+  }, []);
+
   return (
     <main>
       <PageHero
@@ -79,54 +91,29 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          <form
-            className="rounded-3xl border border-slate-200 bg-white p-7 shadow-xl shadow-slate-900/5"
-            onSubmit={(event) => event.preventDefault()}
-          >
-            <h2 className="font-serif text-3xl text-slate-900">
-              Request service
-            </h2>
-            <p className="mt-2 leading-7 text-slate-600">
-              Tell us a little about the issue and we&apos;ll follow up.
-            </p>
-            <div className="mt-7 grid gap-5">
-              <label className="text-sm font-bold text-slate-800">
-                Your name
-                <input
-                  className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3"
-                  required
-                  placeholder="Name"
-                />
-              </label>
-              <label className="text-sm font-bold text-slate-800">
-                Phone number
-                <input
-                  className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3"
-                  type="tel"
-                  required
-                  placeholder="Phone number"
-                />
-              </label>
-              <label className="text-sm font-bold text-slate-800">
-                How can we help?
-                <textarea
-                  className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3"
-                  rows="6"
-                  placeholder="Tell us about the issue"
-                />
-              </label>
-              <button
-                className="rounded-xl bg-sky-700 px-5 py-4 font-bold text-white"
-                type="submit"
-              >
-                Send request →
-              </button>
-              <small className="text-slate-500">
-                For urgent after-hours issues, please text us directly.
-              </small>
-            </div>
-          </form>
-        </div>
+              <div className="w-full min-h-[600px] lg:min-h-[950px]">
+            <iframe
+              src="https://links.magnivodigital.com/widget/form/KWStbvdm1UGw3jQscHY9"
+              style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px" }}
+              id="inline-KWStbvdm1UGw3jQscHY9"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="website contact us form"
+              data-height="929"
+              data-layout-iframe-id="inline-KWStbvdm1UGw3jQscHY9"
+              data-form-id="KWStbvdm1UGw3jQscHY9"
+              data-cookie-consent="true"
+              data-cookie-consent-provider="auto"
+              title="website contact us form"
+            />
+          </div>
+          </div>
+       
       </section>
       <section className="bg-slate-100 px-5 py-24">
         <div className="mx-auto max-w-7xl">
