@@ -11,36 +11,42 @@ const services = [
     "◌",
     service1,
     "Clear kitchen, bathroom, shower, tub, and main-line blockages with a practical diagnosis.",
+    "drain-cleaning",
   ],
   [
     "Leak Repair",
     "⌁",
     service2,
     "Stop hidden leaks behind walls, under slabs, and around fixtures before damage spreads.",
+    "leak-repair",
   ],
   [
     "Water Line Repair",
     "≋",
     service3,
     "Restore pressure and dependable flow with accurate pipe diagnostics and targeted repairs.",
+    "water-line-repair",
   ],
   [
     "Sewer Repair",
     "▣",
     service4,
     "Address backups, root intrusion, aging pipes, and structural problems with lasting solutions.",
+    "sewer-repair",
   ],
   [
     "Water Heater Service",
     "◍",
     service5,
     "Keep hot water reliable with maintenance, repair, replacement, and tankless system support.",
+    "water-heater-service",
   ],
   [
     "Pipe Replacement",
     "↻",
     service7,
     "Replace corroded or outdated plumbing with modern materials designed for long-term performance.",
+    "pipe-replacement",
   ],
 ];
 const signs = [
@@ -79,7 +85,7 @@ export default function Services() {
             title="Experienced help for the problems you can see and the ones you cannot."
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {services.map(([name, icon, image, text]) => (
+            {services.map(([name, icon, image, text, slug]) => (
               <article
                 className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg shadow-slate-900/5"
                 key={name}
@@ -103,10 +109,14 @@ export default function Services() {
                     <li>✓ Final system check</li>
                   </ul>
                   <a
-                    href="#contact"
+                    href={`#service/${slug}`}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      window.location.hash = `#service/${slug}`;
+                    }}
                     className="mt-6 inline-block font-bold text-sky-700"
                   >
-                    Request this service →
+                    Learn more →
                   </a>
                 </div>
               </article>

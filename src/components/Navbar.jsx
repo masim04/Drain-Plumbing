@@ -7,6 +7,7 @@ const links = [
   ["locations", "Locations"],
   ["gallery", "Gallery"],
   ["contact", "Contact"],
+    ["blog", "Blog"],
 ];
 
 export default function Navbar({ activePage }) {

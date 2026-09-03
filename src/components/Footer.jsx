@@ -50,8 +50,21 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 px-5 py-6 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} Drain &amp; Plumbing Services. All rights
-        reserved.
+        <p>
+          Digital Excellence by{" "}
+          <a
+            href="https://magnivodigital.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="font-semibold text-amber-300 hover:text-white"
+          >
+            Magnivo Digital Group
+          </a>
+        </p>
+        <p className="mt-2">
+          © {new Date().getFullYear()} Drain &amp; Plumbing Services. All rights
+          reserved.
+        </p>
       </div>
     </footer>
   );
