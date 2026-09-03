@@ -47,9 +47,9 @@ const testimonials = [
   "A dependable local crew. Our water heater issue was diagnosed and solved in one visit.",
 ];
 const locations = [
-  ["Keystone Heights", "Clay / Bradford / Putnam Hub", "Rapid dispatch"],
-  ["Gainesville", "Alachua County", "Daily fleet routes"],
-  ["Middleburg", "Clay County", "Full service fleet"],
+  ["Arlington", "Tarrant County", "HQ primary dispatch"],
+  ["Irving", "Dallas County", "Daily fleet routes"],
+  ["Carrollton", "Dallas County", "Rapid dispatch"],
 ];
 const gallery = [
   [gallery1, "Drain cleaning", "Restoring flow where your home needs it most."],

@@ -86,9 +86,14 @@ export default function About() {
                 Operating headquarters
               </h2>
               <p className="mt-4 leading-7 text-slate-600">
-                Keystone Heights, Florida
+                6275 W Plano Pkwy, Plano, TX 75093, United States
                 <br />
-                24/7 emergency dispatch active every day
+                (817) 987-1140
+              </p>
+              <p className="mt-4 leading-7 text-slate-600">
+                1110 W Harris Rd Suit 106 Arlington Tx 76001, United States
+                <br />
+                (682) 436-2800
               </p>
             </div>
           </div>

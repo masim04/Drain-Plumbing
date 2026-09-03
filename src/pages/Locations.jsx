@@ -1,15 +1,14 @@
 import { CtaBar, PageHero, SectionTitle } from "../components/PageParts";
 
 const locations = [
-  ["Keystone Heights", "Clay / Bradford / Putnam Hub", "HQ primary dispatch"],
-  ["Gainesville", "Alachua County", "Daily fleet routes"],
-  ["Alachua", "Alachua County", "Rapid dispatch"],
-  ["Newberry", "Alachua County", "Same-day service"],
-  ["Middleburg", "Clay County", "Full service fleet"],
-  ["Green Cove Springs", "Clay County", "Direct route"],
-  ["Starke", "Bradford County", "15-25 min dispatch"],
-  ["Melrose", "Alachua / Putnam Border", "Immediate local hub"],
-  ["Palatka", "Putnam County", "Riverfront service"],
+  ["Arlington", "Tarrant County", "HQ primary dispatch"],
+  ["Irving", "Dallas County", "Daily fleet routes"],
+  ["Carrollton", "Dallas County", "Rapid dispatch"],
+  ["Richardson", "Dallas County", "Same-day service"],
+  ["Plano", "Collin County", "Full service fleet"],
+  ["Grand Prairie", "Dallas County", "Direct route"],
+  ["North Richland Hills", "Tarrant County", "Urgent response"],
+  ["Haltom City", "Tarrant County", "Immediate local hub"],
 ];
 const areaDetails = [
   [
@@ -51,7 +50,7 @@ export default function Locations() {
                   <div>
                     <span className="text-xl text-amber-700">●</span>
                     <h2 className="mt-2 font-serif text-3xl text-slate-900">
-                      {city}, FL
+                      {city}, TX
                     </h2>
                     <p className="mt-1 text-sm text-slate-500">{county}</p>
                   </div>

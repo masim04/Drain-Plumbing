@@ -61,6 +61,10 @@ export default function Contact() {
                   <strong className="text-xl text-slate-900">
                     1 (682) 436-2800
                   </strong>
+                  <br/>
+                  <strong className="text-xl text-slate-900">
+                    1 (817) 987-1140
+                  </strong>
                 </span>
               </a>
               <a
