@@ -91,15 +91,9 @@ export default function Home() {
             </div>
             <div className="mt-10 flex gap-10">
               <div>
-                <strong className="block text-3xl text-amber-700">15+</strong>
+                <strong className="block text-3xl text-amber-700">7+</strong>
                 <span className="text-xs uppercase tracking-wider text-slate-500">
-                  Years local service
-                </span>
-              </div>
-              <div>
-                <strong className="block text-3xl text-amber-700">24/7</strong>
-                <span className="text-xs uppercase tracking-wider text-slate-500">
-                  After-hours text support
+                  Years in business
                 </span>
               </div>
             </div>
@@ -120,7 +114,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-slate-950 px-5 py-10 text-white">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 sm:grid-cols-4">
+          <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 sm:grid-cols-4">
           <div>
             <strong className="text-4xl text-amber-400">6+</strong>
             <p className="mt-2 text-sm text-slate-400">Core services</p>
@@ -130,8 +124,8 @@ export default function Home() {
             <p className="mt-2 text-sm text-slate-400">Cities served</p>
           </div>
           <div>
-            <strong className="text-4xl text-amber-400">24/7</strong>
-            <p className="mt-2 text-sm text-slate-400">Emergency text line</p>
+            <strong className="text-4xl text-amber-400">7+</strong>
+            <p className="mt-2 text-sm text-slate-400">Years in business</p>
           </div>
           <div>
             <strong className="text-4xl text-amber-400">100%</strong>
