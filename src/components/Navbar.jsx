@@ -17,8 +17,8 @@ export default function Navbar({ activePage }) {
       <div className="bg-slate-950 px-5 py-3 text-xs text-slate-300 hidden md:block">
         <div className="mx-auto flex max-w-7xl justify-between gap-4">
           <span>Serving Dallas-Fort Worth Metroplex</span>
-          <a className="font-bold text-white" href="sms:+16824362800">
-            Work Time: 8 am to 5 pm, Call us: 1 (682) 436-2800
+            <a className="font-bold text-white" href="sms:+18179871140">
+            Work Time: 8 am to 5 pm, Call us: 1 (817) 987-1140, 1 (682) 436-2800
           </a>
         </div>
       </div>
@@ -58,11 +58,11 @@ export default function Navbar({ activePage }) {
               </a>
             ))}
           </nav>
-          <a
-            href="tel:+16824362800"
-            className="hidden rounded-full bg-sky-700 text-slate-300 px-5 py-3 text-sm font-bold shadow-lg shadow-sky-700/20 transition hover:-translate-y-0.5 hover:bg-sky-800 sm:inline-flex"
+            <a
+            href="tel:+18179871140"
+            className="hidden rounded-full bg-sky-700 px-5 py-3 text-sm font-bold shadow-lg shadow-sky-700/20 transition hover:-translate-y-0.5 hover:bg-sky-800 sm:inline-flex"
           >
-            Call 1 (682) 436-2800
+            Call 1 (817) 987-1140
           </a>
         </div>
       </header>

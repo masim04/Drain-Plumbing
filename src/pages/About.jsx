@@ -88,12 +88,12 @@ export default function About() {
               <p className="mt-4 leading-7 text-slate-600">
                 6275 W Plano Pkwy, Plano, TX 75093, United States
                 <br />
-                (817) 987-1140
+                (682) 436-2800
               </p>
               <p className="mt-4 leading-7 text-slate-600">
                 1110 W Harris Rd Suit 106 Arlington Tx 76001, United States
                 <br />
-                (682) 436-2800
+                (817) 987-1140
               </p>
             </div>
           </div>

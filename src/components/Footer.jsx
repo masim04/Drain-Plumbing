@@ -42,9 +42,12 @@ export default function Footer() {
             Contact
           </h2>
           <div className="grid gap-3">
+            <a href="tel:+18179871140">1 (817) 987-1140</a>
             <a href="tel:+16824362800">1 (682) 436-2800</a>
             <a href="sms:+16824362800">Text after hours</a>
-            <span>Dallas-Fort Worth, Texas</span>
+            <span>6275 W Plano Park Way Suit 500, Plano, TX 75093</span>
+            <span>1110 W Harris Rd Suit 106 Arlington Tx 76001</span>
+            
             <span>Licensed, bonded, and insured</span>
           </div>
         </div>

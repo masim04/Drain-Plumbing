@@ -75,16 +75,23 @@ export default function Home() {
               pipe replacement, we deliver dependable plumbing care built for
               real homes and busy families.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+             <div className="mt-8 flex flex-wrap gap-4 text-white">
               <a
                 href="tel:+16824362800"
-                className="rounded-full bg-sky-700 px-6 py-4 font-bold text-white shadow-xl shadow-sky-700/20"
+                className="rounded-full bg-sky-700 px-6 py-4 font-bold shadow-xl shadow-sky-700/20"
               >
                 Call now: 1 (682) 436-2800
               </a>
               <a
+                href="tel:+18179871140"
+                className="rounded-full bg-sky-700 px-6 py-4 font-bold text-white shadow-xl shadow-sky-700/20"
+              >
+                Call now: 1 (817) 987-1140
+              </a>
+              
+              <a
                 href="#contact"
-                className="rounded-full border border-amber-600/40 bg-amber-50 px-6 py-4 font-bold text-slate-900"
+                className="rounded-full border border-amber-600/40 bg-amber-500 px-6 py-4 font-bold"
               >
                 Request service
               </a>
